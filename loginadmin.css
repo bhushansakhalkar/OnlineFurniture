@@ -1,0 +1,11 @@
+.head{
+	height:20vh;
+	width:100%;
+	padding-left: 5%;
+}
+body{
+	background-color: lightblue;
+}
+.log{
+	text-align: center;
+}

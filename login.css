@@ -1,0 +1,52 @@
+.head{
+	height:20vh;
+	width:90%;
+	float:right;
+}
+
+.button1{
+	font-size:20px; 
+}
+.button2{
+	font-size:20px;
+}
+.buttons{
+	width:100%;
+	height: 30%;
+	float:left;
+}
+.SignUp{
+	width: 50%;
+	height: 100%;
+	float:left;
+	background-color:black;
+	color:White;
+	text-align: center;
+}
+.Login{
+	width: 50%;
+	height: 100%;
+	float:right;
+	color:White;
+	background-color:brown;
+	text-align: center;
+}
+body{
+	background-color: lightblue;
+}
+.container{
+	width:100%;
+	float:left;
+}
+.log{
+	width:50%;
+	height:100%;
+	float:right;
+	display:none;
+}
+.sign{
+	width:50%;
+	height:100%;
+	float:right;
+	display:none;
+}

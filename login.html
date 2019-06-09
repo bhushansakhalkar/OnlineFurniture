@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<title>Login</title>
+	 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+</head>
+<body>
+	<div class="head">
+  <img src="images.png" height="100px" width="1000px">
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+	<h1 style="padding-left: 50px">Select one of the two buttons.</h1> 
+	<div class="buttons">
+	<div class="SignUp">
+		<h3>If you are new to our site please click me</h3>
+		<button class="button1 btn-default" onclick="signUp()">SignUp</button>
+	</div>
+		<div class="Login">
+		<h3>If you are a regular click me</h3>
+		<button class="button2 btn-default" onclick="login()">Login</button>
+	</div>
+	</div>
+	
+
+<script>
+	function login(){
+		var form = document.getElementById("abc");
+		if(form.style.display== "block"){
+			form.style.display= "none";
+		}else{
+			form.style.display= "block";
+		}
+	}
+</script>
+<script >
+	function validate(obj Form){
+	if(document.getElementById("p").value!===getElementById("c").value){
+		alert("Please enter the correct password");
+	}
+}
+</script>
+<script>
+	function signUp(){
+		var form1 = document.getElementById("bcd");
+		if(form1.style.display== "block"){
+			form1.style.display= "none";
+		}else{
+			form1.style.display= "block";
+		}
+	}
+</script>
+	<div class="container">
+	<div class="log" id="abc">
+		<h1>Login</h1>
+		<form action="login.php" method="POST">
+		Enter Username:<input type="text" name="lusername"><br>
+		Enter Password:<input type="text" name="lpassword"><br>
+		<input type = "submit" name="s">
+		</form>
+	</div>
+	<div class="sign" id="bcd">
+	<h1>Sign Up</h1>
+	<form onsubmit="validate(this)" action="login.php" method="POST">
+	Enter Your first name:<input type="text" name="sfname"><br>
+	Enter Your Last name:<input type="text" name="slname"><br>
+	Enter Your mobile no:<input type="text" name="smob"><br>
+	Enter Your Address:<input type="text" name="saddress"><br>
+	Enter username:<input type="text" name="susername"><br>
+	Enter password:<input type="text" name="spassword" id="p"><br>
+	Confirm password:<input type="text" name="scpassword" id="c"><br>
+		<input type="submit">
+	</form>
+	</div>
+</div>
+</body>
+</html>

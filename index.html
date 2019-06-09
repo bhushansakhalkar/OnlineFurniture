@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.head{
+  height:15vh;
+  width:100%;
+  text-align: center;
+
+}
+body{
+  background-color:lightblue;
+}
+  tr:hover {background-color:#f5f5f5;}
+
+.mySlides {display:none;}
+.main{
+  width:80%;
+  height:100vh;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+}
+.middle{
+float: left;
+width:55%;
+}
+.left{
+  width:20%;
+float: left;
+background-color: black;
+color: white;
+text-align: center;
+}
+.right{
+  width:20%;
+float: left;
+background-color: black;
+color: white;
+text-align: center;
+}
+.urlela{
+  padding-right: 20px;
+  padding-top: 20px;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+	<div class="head">
+  <img src="images.png" height="100px" width="90%">
+  </div>
+  <h1 style="text-align: center; color:white; background-color: black; ">Welcome</h1>
+  <div class="main">
+    <div class="left">
+    <img src="customer.jpg" width="220px" height="150px">
+      <h3>Click on the link to view more items</h3>
+      <a href="login1.php"><h1 style="color: red;">Know More</h1></a>
+      <br>
+  <br>
+  <br>
+    </div>
+    <div class="middle">
+    <div class="w3-content w3-section" style="max-width:450px; margin-right: auto;
+ display: block;">
+  <img class="mySlides" src="download1.jpg" style="width:100%;">
+  <img class="mySlides" src="download2.jpg" style="width:100%;">
+   </div>
+</div>
+<div class="right">
+  <img src="sale.jpg" width="220px" height="120px">
+  <h1>Flat 50% off on all orders above Rs 15000</h1><br>
+  </div>
+  <div class="urlela" >
+  <img src="sofa1.jpg" width="200px" height="200px">
+  <img src="sofa3.jpg" width="200px" height="200px">
+  <img src="side2.jpg" width="200px" height="200px">
+  <img src="sideimg2.jpg" width="200px" height="200px">
+  <img src="sofa2.jpg" width="200px" height="200px">
+  <img src="table1.jpg" width="200px" height="200px">
+  <img src="table2.jpg" width="200px" height="200px">
+  <img src="Bed1.jpg" width="200px" height="200px">
+  <img src="Bed2.jpg" width="200px" height="200px">
+  <img src="Bed3.jpg" width="200px" height="200px">
+<br><br>
+</div>
+  </div>
+  </div>
+</body>
+</html>
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>

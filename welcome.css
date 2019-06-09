@@ -1,0 +1,27 @@
+
+.head{
+	height:15vh;
+	width:100%;
+	text-align: center;
+
+}
+.welcome{
+	height:10vh;
+	width:100%
+	text-align:center;
+	color:White;  
+}
+.leftsidebar{
+	width:20%;
+	height: 100vh;
+	float: left;
+	text-align: center;  
+}
+.main{
+	width:79%;
+	height: 100vh;
+	float: right;
+}
+body{
+	background-color:lightblue;
+}

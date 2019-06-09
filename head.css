@@ -1,0 +1,44 @@
+.head{
+	height:20vh;
+	width:100%;
+}
+.leftsidebar{
+	width:20%;
+	height: 100vh;
+	float: left;   
+}
+.main{
+	width:60%;
+	height: 100vh;
+	float: left;
+}
+.rightsidebar{
+	width: 20%;
+	height:100vh;
+	float:left;
+}
+.splitleft{
+	background-color:black;
+	font-style: Times new roman;
+	color:white;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  float:left;
+  padding-top: 40%;
+  padding-left: 80px;
+}
+.splitright{
+	background-color:pink;
+	font-style: Times new roman;
+	color:black;
+	height: 100%;
+  width: 50%;
+  top: 0;
+  float:left; 
+  padding-top: 40%;
+  padding-left: 80px;
+}
+
+
+
